@@ -71,10 +71,10 @@ int main()
         printf("\t");
         for(i=0;i<4;++i)
         {
-            printf("%c",sgpa[i]);
+            if(sgpa[i]!='\0')printf("%c",sgpa[i]);
         }
     }
-
+    fclose(op);
     fclose(tp);
     fclose(fp);
     return 0;
